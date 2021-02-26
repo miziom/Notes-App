@@ -1,0 +1,19 @@
+<div class="container">
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th>TITLE</th>
+      <th>CREATED DATE</th>
+      <th>LAST MODIFICATION DATE</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let note of notes;" (click)="open(note)">
+      <td><span>{{note.title}}</span></td>
+      <td><span>{{note.createdDate | date:'medium'}}</span></td>
+      <td><span>{{note.modifiedDate | date:'medium'}}</span></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
