@@ -1,13 +1,14 @@
 package pl.mizio.notesapi;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import static org.springframework.boot.SpringApplication.run;
 
 @SpringBootApplication
 public class NotesApiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(NotesApiApplication.class, args);
+        run(NotesApiApplication.class, args);
     }
 
 }
